@@ -1,0 +1,77 @@
+<html>
+<head>
+
+<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+
+<script>
+
+
+var dice1 = Math.floor(Math.random()*6+1);
+var dice2 = Math.floor(Math.random()*6+1);
+var dice3 = Math.floor(Math.random()*6+1);
+var dice4 = Math.floor(Math.random()*6+1);
+var dice5 = Math.floor(Math.random()*6+1);
+
+function selectImage(dice){
+	var imageLink;
+	switch(dice){
+		case 1:
+			imageLink = "./img/1.png";
+		case 2:
+			imageLink = "./img/2.png";
+		case 3:
+			imageLink = "./img/3.png";
+		case 4:
+			imageLink = "./img/4.png";
+		case 5:
+			imageLink = "./img/5.png";
+		case 6:
+			imageLink = "./img/6.png";	
+
+	}
+
+	return imageLink;
+}
+/*
+$("#dice1").prepend('<img src = "' + selectImage(dice1) + '"">');
+$("#dice2").prepend('<img src = "' + selectImage(dice2) + '"">');
+$("#dice3").prepend('<img src = "' + selectImage(dice3) + '"">');
+$("#dice4").prepend('<img src = "' + selectImage(dice4) + '"">');
+$("#dice5").prepend('<img src = "' + selectImage(dice5) + '"">');
+*/
+
+$(document).ready(function(){
+	$("#dice1").text(dice1);
+	$("#dice2").text(dice2);
+	$("#dice3").text(dice3);
+	$("#dice4").text(dice4);
+	$("#dice5").text(dice5);	
+});
+
+
+</script>
+<style>
+
+.dice{
+	height: 50px;
+	width: 50px;
+	background-color: yellow;
+	margin: 10px 10px 10px 10px;
+}
+
+.header{
+	height: 100px;
+}
+</style>
+</head>
+<body>
+
+<div class="header"></div>
+
+<div class="dice" id="dice1"></div>
+<div class="dice" id="dice2"></div>
+<div class="dice" id="dice3"></div>
+<div class="dice" id="dice4"></div>
+<div class="dice" id="dice5"></div>
+</body>
+</html>
