@@ -1,15 +1,20 @@
 <html>
 <head>
-
+<<<<<<< HEAD
     
     <title>Liar's Dice</title>
 
     <link href="/Flat-UI-master/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="/Flat-UI-master/css/flat-ui.css" rel="stylesheet">
+=======
+>>>>>>> gh-pages
 
 <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
 
 <script>
+
+<<<<<<< HEAD
+=======
 
 var dice1 = Math.floor(Math.random()*6+1);
 var dice2 = Math.floor(Math.random()*6+1);
@@ -17,6 +22,7 @@ var dice3 = Math.floor(Math.random()*6+1);
 var dice4 = Math.floor(Math.random()*6+1);
 var dice5 = Math.floor(Math.random()*6+1);
 
+>>>>>>> gh-pages
 function selectImage(dice){
 	var imageLink;
 	switch(dice){
@@ -37,10 +43,16 @@ function selectImage(dice){
 
 	return imageLink;
 }
-
+/*
+$("#dice1").prepend('<img src = "' + selectImage(dice1) + '"">');
+$("#dice2").prepend('<img src = "' + selectImage(dice2) + '"">');
+$("#dice3").prepend('<img src = "' + selectImage(dice3) + '"">');
+$("#dice4").prepend('<img src = "' + selectImage(dice4) + '"">');
+$("#dice5").prepend('<img src = "' + selectImage(dice5) + '"">');
+*/
 
 $(document).ready(function(){
-
+<<<<<<< HEAD
 	function roll(){
 		$("#dice1").text(Math.floor(Math.random()*6+1));
 		$("#dice2").text(Math.floor(Math.random()*6+1));
@@ -108,8 +120,13 @@ body{
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
-
-};
+=======
+	$("#dice1").text(dice1);
+	$("#dice2").text(dice2);
+	$("#dice3").text(dice3);
+	$("#dice4").text(dice4);
+	$("#dice5").text(dice5);	
+});
 
 
 </script>
@@ -124,11 +141,13 @@ body{
 
 .header{
 	height: 100px;
+>>>>>>> gh-pages
 }
 </style>
 </head>
 <body>
 
+<<<<<<< HEAD
 <div class="h1">Liar's Dice</div>
 
 <div class="container">
@@ -144,6 +163,8 @@ body{
 	Roll Dice
 </button>
 
+
+=======
 <div class="header"></div>
 
 <div class="dice" id="dice1"></div>
@@ -151,6 +172,6 @@ body{
 <div class="dice" id="dice3"></div>
 <div class="dice" id="dice4"></div>
 <div class="dice" id="dice5"></div>
-
+>>>>>>> gh-pages
 </body>
 </html>
