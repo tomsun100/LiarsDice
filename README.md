@@ -1,4 +1,4 @@
 LiarsDice
 =========
 
-A little web game that you can play.
+A game where you call out the dirty liars. 
