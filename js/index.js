@@ -1,5 +1,3 @@
-//<script>
-
 var dice1 = Math.floor(Math.random()*6+1);
 var dice2 = Math.floor(Math.random()*6+1);
 var dice3 = Math.floor(Math.random()*6+1);
@@ -39,12 +37,11 @@ $(document).ready(function(){
 	};
 	
 	roll();//First roll on page load
-	
 
 	$("#roll").click(function(){
 		roll();
-	    });//Roll Dice Button
+	});//Roll Dice Button
 	
-    });
+	$("#tooltip").tooltip();
 
-//</script>
+    });
